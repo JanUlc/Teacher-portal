@@ -9,6 +9,7 @@ import useModal from 'components/organisms/Modal/useModal';
 import StudentDetails from 'components/molecules/StudentDetails/StudentDetails';
 import Modal from 'components/organisms/Modal/Modal';
 
+
 const Dashboard = () => {
   const [groups, setGroups] = useState([]);
   const [currentStudent, setCurrentStudent] = useState(null);
@@ -30,7 +31,8 @@ const Dashboard = () => {
   };
 
   if (!id && groups.length > 0) return <Navigate to={`/group/${groups[0].id}`} />;
-
+  
+  
   return (
     <Wrapper>
       <TitleWrapper>
